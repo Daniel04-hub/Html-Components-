@@ -1,0 +1,33 @@
+You can achieve this layout using CSS flexbox or CSS grid, but one of the simplest ways is by using float or flexbox. Here's an example using flexbox:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left and Right Boxes</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between; 
+            /* Aligns boxes to left and right */
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Left Box</div>
+        <div class="box">Right Box</div>
+    </div>
+</body>
+</html>
+
+
+This code creates two boxes positioned on the left and right using display: flex; with justify-content: space-between;. If you prefer float, let me know and I can tweak it!
